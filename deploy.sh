@@ -1,24 +1,18 @@
 #!/bin/sh
+set -Ceu
 
-DOT_DIRECTORY=~/dotfiles
+DOT_DIRECTORY="${HOME}/dotfiles"
+SPECIFY_FILES=".config" # 複数ファイルは""の中に半角スペース空けで入力しましょう
 
-cd ${DOT_DIRECTORY}
-
-for f in .??*
+# ドットファイルとドットファイル以外の特定ファイルを回す
+for f in .??* ${SPECIFY_FILES}
 do
-  # 無視したいファイルやディレクトリはこんな風に追加してね
-  [[ ${f} = ".cache" ]] && continue
-  [[ ${f} = ".CFUserTextEncoding" ]] && continue
-  [[ ${f} = ".DS_Store" ]] && continue
-  [[ ${f} = ".gitconfig" ]] && continue
-  [[ ${f} = ".ssh" ]] && continue
-  [[ ${f} = ".viminfo" ]] && continue
-  [[ ${f} = ".vscode" ]] && continue
-  [[ ${f} = ".gitignore" ]] && continue
+  # 無視したいファイルやディレクトリを追加
   [[ ${f} = ".git" ]] && continue
+  [[ ${f} = ".gitignore" ]] && continue
+  [[ ${f} = ".gitmodules" ]] && continue
+  [[ ${f} = ".DS_Store" ]] && continue
+  [[ ${f} = ".travis.yml" ]] && continue
   ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
-echo ${DOT_DIRECTORY}
-echo ${f}
-echo ${HOME}
 echo $(tput setaf 2)Deploy dotfiles complete!. ✔︎$(tput sgr0)
