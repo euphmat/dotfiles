@@ -1,4 +1,18 @@
-# 始めにすべての階層のファイルを無視
-# 階層は必要なだけ追加する
+# All ignore
 /*
+/.**
+
+# WhiteList
+!/.bin/
+!/.bin/**
+!/.config/
+!/.config/fish
+!/.config/fish/**
+!/.config/karabiner/
+!/.config/karabiner/**
+!/.doc/
+!/.doc/**
+!/.gitignore
+!/.vimrc
+!/.README.md
 
