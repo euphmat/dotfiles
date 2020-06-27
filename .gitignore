@@ -7,7 +7,8 @@
 !/.config/fish
 !/.config/fish/**
 !/.config/karabiner/
-!/.config/karabiner/**
+!/.config/karabiner/assets/
+!/.config/karabiner/assets/**
 !/.vimrc
 !/.README.md
 !.gitignore
