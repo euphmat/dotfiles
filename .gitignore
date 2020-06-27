@@ -3,16 +3,11 @@
 /.**
 
 # WhiteList
-!/.bin/
-!/.bin/**
 !/.config/
 !/.config/fish
 !/.config/fish/**
 !/.config/karabiner/
 !/.config/karabiner/**
-!/.doc/
-!/.doc/**
-!/.gitignore
 !/.vimrc
 !/.README.md
-
+!.gitignore
