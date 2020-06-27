@@ -2,7 +2,7 @@
 /*
 /.**
 
-# WhiteList
+# WhiteList (Gitでの管理対象)
 !/.config/
 !/.config/fish
 !/.config/fish/**
