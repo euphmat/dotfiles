@@ -2,7 +2,7 @@
 /*
 /.**
 
-# WhiteList (Gitでの管理対象)
+# Whitelist dotfiles 
 !/.config/
 !/.config/fish
 !/.config/fish/**
@@ -12,3 +12,7 @@
 !/.vimrc
 !/.README.md
 !.gitignore
+
+# Whitelist
+!/bin
+!/doc
