@@ -1,0 +1,17 @@
+Package     Version  
+----------- ---------
+certifi     2020.6.20
+chardet     3.0.4    
+click       6.2      
+future      0.15.2   
+idna        2.10     
+instaloader 4.4.4    
+pip         20.0.2   
+pocket-api  0.1.5    
+pocket-cli  0.1.6    
+progress    1.2      
+requests    2.9.1    
+setuptools  46.0.0   
+six         1.10.0   
+urllib3     1.25.9   
+wheel       0.34.2   

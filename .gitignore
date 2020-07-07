@@ -14,5 +14,7 @@
 !.gitignore
 
 # Whitelist
-!/bin
+!/bin/
+!/bin/**
 !/doc
+!/doc/**
