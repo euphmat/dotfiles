@@ -6,6 +6,7 @@ fish
 gdbm
 gettext
 git
+gphotos-uploader-cli
 libevent
 libzip
 mas
@@ -17,7 +18,6 @@ readline
 sqlite
 tig
 tldr
-tmux
 utf8proc
 waifu2x
 xz
