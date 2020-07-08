@@ -1,6 +1,6 @@
 # fish config
 set -g theme_display_date no
-set theme_color_scheme light
+set theme_color_scheme dracula
 
 # vim
 alias fishrc="vim ~/dotfiles/.config/fish/config.fish"
