@@ -7,7 +7,6 @@ future      0.18.2
 idna        2.10     
 instaloader 4.4.4    
 pip         20.0.2   
-pocket-api  0.1.5    
 progress    1.2      
 requests    2.9.1    
 setuptools  46.0.0   
