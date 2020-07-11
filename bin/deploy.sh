@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ue
 
-command echo -e "🏃 Started Deploying..."
+command echo -e "🏃 Started Deploy..."
 link_to_homedir()
 {
 	local script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
