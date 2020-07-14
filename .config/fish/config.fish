@@ -14,3 +14,6 @@ alias reload="source ~/dotfiles/.config/fish/config.fish"
 # rust commands
 alias ll="exa -hl"
 alias la="exa -hla"
+
+# Git
+alias gitl="git log --oneline --graph --color --all --decorate"
