@@ -1,9 +1,17 @@
 #!/bin/bash
 set -Cu
 
+echo "Installing Cask Formulas..."
+
 casktxt=../doc/cask.txt
-# TODO waifu2xがインストールできない
+
 while read line
 do
-        echo "brew cask install $line"
+        brew cask install $line
 done < $casktxt 
+
+## iTerm2
+echo "Installing imgcat on iTerm2..."
+curl https://iterm2.com/utilities/imgcat > /usr/local/bin/imgcat && chmod +x /usr/local/bin/imgcat;
+
+echo "Finished"
