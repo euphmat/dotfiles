@@ -5,6 +5,7 @@ mastxt=../doc//mas.txt
 
 while read line
 do
-        masapp=$line | `awk '{print $1}'`
-        echo $masapp
+      #echo $line | awk '{print $1}'
+      masapp=$(awk -v '{print $1}' <<< ${line}) 
+      echo $masapp
 done < $mastxt
