@@ -6,10 +6,10 @@ brewtxt=../doc/brew.txt
 while read line
 do
         if [[ $line == *waifu2x* ]]; then
-                echo "brew install imxieyi/waifu2x/$line"
+                brew install imxieyi/waifu2x/$line
         elif [[ $line == *gphotos* ]]; then
-                echo "brew install gphotosuploader/tap/$line"
+                brew install gphotosuploader/tap/$line
         else
-                echo "brew install $line"
+                brew install $line
         fi
 done < $brewtxt 
