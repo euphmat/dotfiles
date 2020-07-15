@@ -2,7 +2,6 @@
 set -Cu
 
 brewtxt=../doc/brew.txt
-# TODO waifu2xがインストールできない
 while read line
 do
         if [[ $line == *waifu2x* ]]; then
