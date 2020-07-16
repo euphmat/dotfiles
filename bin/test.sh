@@ -1,17 +1,24 @@
 #!/bin/bash
-set -Ce
+set -Ceu
 
-npmtxt=../doc//npm.txt
+echo "@@@@@@@@@@@@@@@@@@"
+echo "@@ Test Program @@"
+echo "@@@@@@@@@@@@@@@@@@"
 
+data_source=../doc//npm.txt
+echo "==========================================================="
+echo "  npm.sh"
+echo "==========================================================="
 while read line
 do
-      npmapp=`echo $line | awk '{sub("@.*$", ""); print $2} '`
+      line_package_name=`echo $line | awk '{sub("@.*$", ""); print $2} '`
+      line_package_command=`echo $line | awk '{sub("@.*$", "");sub("-.*$", ""); print $2} '`
 
-      if [[ $npmapp != */usr/local/lib* ]] && [[ $npmapp != "" ]]; then
-              if [[ `type $npmapp; echo $?` = 0 ]]; then
-                      echo "Already Installed $npmapp"
+      if [[ $line_package_name != */usr/local/lib* ]] && [[ $line_package_name != "" ]]; then
+              if [[ `type $line_package_command; echo $?` != 1 ]]; then
+                      echo "$line_package_command : ok"
               else
-                      echo "installing $npmapp"
+                      echo "$line_package_command : ERROR"
               fi
       fi
-done < $npmtxt
+done < $data_source
