@@ -4,12 +4,12 @@ set -Cu
 data_source=../doc/brew.txt
 while read line
 do
-        if [[ $line == *waifu2x* ]]; then
-                brew install imxieyi/waifu2x/$line
-        elif [[ $line == *gphotos* ]]; then
-                brew install gphotosuploader/tap/$line
+        line_package_name=`echo $line`
+
+        if [[ `type $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+                echo "✅ Already Installed $line_package_name"
         else
-                brew install $line
-                echo $line
+                echo "⤵ installing $line_package_name"
+                brew install $line_package_name
         fi
 done < $data_source 

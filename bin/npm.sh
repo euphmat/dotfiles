@@ -1,5 +1,5 @@
 #!/bin/bash
-set -Ceu
+set -Cu
 
 data_source=../doc//npm.txt
 
@@ -9,10 +9,10 @@ do
       line_package_command=`echo $line | awk '{sub("@.*$", "");sub("-.*$", ""); print $2} '`
 
       if [[ $line_package_name != */usr/local/lib* ]] && [[ $line_package_name != "" ]]; then
-              if [[ `type $line_package_command; echo $?` != 1 ]]; then
-                      echo "Already Installed $line_package_name"
+              if [[ `type $line_package_command 2>/dev/null; echo $?` != 1 ]]; then
+                      echo "✅ Already Installed $line_package_name"
               else
-                      echo "installing $line_package_name"
+                      echo "⤵ installing $line_package_name"
                       npm install $line_package_name
               fi
       fi
