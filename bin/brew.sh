@@ -1,7 +1,7 @@
 #!/bin/bash
 set -Cu
 
-brewtxt=../doc/brew.txt
+data_source=../doc/brew.txt
 while read line
 do
         if [[ $line == *waifu2x* ]]; then
@@ -10,5 +10,6 @@ do
                 brew install gphotosuploader/tap/$line
         else
                 brew install $line
+                echo $line
         fi
-done < $brewtxt 
+done < $data_source 
