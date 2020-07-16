@@ -6,7 +6,7 @@ while read line
 do
         line_package_name=`echo $line`
 
-        if [[ `type $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+        if [[ `brew info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
                 echo "✅ Already Installed $line_package_name"
         else
                 #todo:tap package

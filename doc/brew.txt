@@ -24,3 +24,4 @@ utf8proc
 waifu2x
 xz
 youtube-dl
+ogeeeeeeeeee
