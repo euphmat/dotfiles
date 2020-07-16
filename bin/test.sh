@@ -5,10 +5,10 @@ echo "@@@@@@@@@@@@@@@@@@"
 echo "@@ Test Program @@"
 echo "@@@@@@@@@@@@@@@@@@"
 
-data_source=../doc/npm.txt
 echo "==========================================================="
 echo "  npm.sh"
 echo "==========================================================="
+data_source=../doc/npm.txt
 while read line
 do
         line_package_name=`echo $line | awk '{sub("@.*$", ""); print $2} '`
@@ -22,25 +22,52 @@ do
         fi
 done < $data_source
 
-data_source=../doc/brew.txt
 echo "==========================================================="
 echo "  brew.sh"
 echo "==========================================================="
+data_source=../doc/brew.txt
 while read line
 do
         line_package_name=`echo $line`
-        if [[ `type $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+        if [[ `brew info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
                 echo "$line_package_name : ✅"
         else
                 echo "$line_package_name : ✖"
         fi
 done < $data_source
 
+echo "==========================================================="
+echo "  cask.sh"
+echo "==========================================================="
+data_source=../doc/cask.txt
+while read line
+do
+        line_package_name=`echo $line`
+        if [[ `brew cask info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+                echo "$line_package_name : ✅"
+        else
+                echo "$line_package_name : ✖"
+        fi
+done < $data_source
 
-data_source=../doc/pip3.txt
+echo "==========================================================="
+echo "  mas.sh"
+echo "==========================================================="
+data_source=../doc/mas.txt
+while read line
+do
+        line_package_name=`echo $line | awk '{print $1} '`
+        if [[ `mas info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+                echo "$line_package_name : ✅"
+        else
+                echo "$line_package_name : ✖"
+        fi
+done < $data_source
+
 echo "==========================================================="
 echo "  pip3.sh"
 echo "==========================================================="
+data_source=../doc/pip3.txt
 while read line
 do
         line_package_name=`echo $line | awk '{print $1} '`
