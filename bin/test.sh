@@ -29,7 +29,7 @@ data_source=../doc/brew.txt
 while read line
 do
         line_package_name=`echo $line`
-        if [[ `brew info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+        if [[ `brew list $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
                 echo "$line_package_name : ✅"
         else
                 echo "$line_package_name : ✖"
@@ -43,7 +43,7 @@ data_source=../doc/cask.txt
 while read line
 do
         line_package_name=`echo $line`
-        if [[ `brew cask info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+        if [[ `brew cask list $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
                 echo "$line_package_name : ✅"
         else
                 echo "$line_package_name : ✖"
@@ -57,7 +57,7 @@ data_source=../doc/mas.txt
 while read line
 do
         line_package_name=`echo $line | awk '{print $1} '`
-        if [[ `mas info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+        if [[ `mas outdated $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
                 echo "$line_package_name : ✅"
         else
                 echo "$line_package_name : ✖"
