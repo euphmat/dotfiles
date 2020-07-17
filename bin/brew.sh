@@ -2,6 +2,7 @@
 set -Cu
 
 data_source=../doc/brew.txt
+
 while read line
 do
         line_package_name=`echo $line`
