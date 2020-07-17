@@ -57,7 +57,8 @@ data_source=../doc/mas.txt
 while read line
 do
         line_package_name=`echo $line | awk '{print $1} '`
-        if [[ `mas outdated $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
+        if [[ `echo mas info $line_package_name 2>/dev/null` *Warning* ]]; then
+        #if [[ `mas info $line_package_name 2>/dev/null; echo $?` = 0 ]]; then
                 echo "$line_package_name : ✅"
         else
                 echo "$line_package_name : ✖"
