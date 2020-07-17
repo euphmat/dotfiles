@@ -10,7 +10,6 @@ do
         if [[ `brew cask info $line_package_name 2>/dev/null; echo $?` != 1 ]]; then
                 echo "✅ Already Installed $line_package_name"
         else
-                #todo:tap package
                 echo "⤵ installing $line_package_name"
                 brew cask install $line_package_name
         fi
