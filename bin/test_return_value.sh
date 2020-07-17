@@ -16,7 +16,7 @@ echo `brew info exa >/dev/null 2>&1; echo $?`
 echo -n "cask : "
 echo `brew cask info Alfred >/dev/null 2>&1; echo $?`
 
-echo -n "mas : "
+echo -n "mas  : "
 echo `mas info 539883307 >/dev/null 2>&1; echo $?`
 
 echo ""
@@ -35,5 +35,5 @@ echo `brew info xa >/dev/null 2>&1; echo $?`
 echo -n "cask : "
 echo `brew cask info Alfed >/dev/null 2>&1; echo $?`
 
-echo -n "mas : "
+echo -n "mas  : "
 echo `mas  info 53954543534534 >/dev/null 2>&1; echo $?`
