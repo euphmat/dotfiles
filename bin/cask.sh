@@ -1,8 +1,7 @@
 #!/bin/bash
 set -Cu
 
-data_source=../doc/brew.txt
-
+data_source=../doc/cask.txt
 while read line
 do
         line_package_name=`echo $line`
