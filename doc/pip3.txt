@@ -3,7 +3,7 @@ Package     Version
 certifi     2020.6.20
 chardet     3.0.4
 idna        2.10
-instaloader 4.4.4
+instaloader 4.4.5
 pip         20.1.1
 requests    2.24.0
 setuptools  49.2.0
