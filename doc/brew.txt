@@ -1,5 +1,6 @@
 bash
 bat
+docker
 exa
 fd
 fish
@@ -20,6 +21,7 @@ readline
 sqlite
 tig
 tldr
+unar
 utf8proc
 waifu2x
 xz
