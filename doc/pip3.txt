@@ -7,5 +7,5 @@ instaloader 4.4.5
 pip         20.1.1
 requests    2.24.0
 setuptools  49.2.0
-urllib3     1.25.9
+urllib3     1.25.10
 wheel       0.34.2
