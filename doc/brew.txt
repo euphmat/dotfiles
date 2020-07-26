@@ -10,14 +10,17 @@ git
 gphotos-uploader-cli
 icu4c
 libevent
+libssh2
 libzip
 mas
 ncurses
 node
 openssl@1.1
 pcre2
+pkg-config
 python@3.8
 readline
+rust
 sqlite
 tig
 tldr
