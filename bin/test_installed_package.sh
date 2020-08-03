@@ -39,9 +39,9 @@ do
         line_package_name=`echo $line | awk '{print $1} '`
         line_package_appname=`echo $line | awk '{print $2} '`
         if [[ `grep $line_package_name -rl ../doc/mas.txt >/dev/null 2>&1; echo $?` = 0 ]] && [[ `mas search $line_package_name >/dev/null 2>&1; echo $?` = 0 ]]; then
-                echo -e "$line_package_name : \033[0;32mSuccess\033[0;39m"
+                echo -e "$line_package_appname : \033[0;32mSuccess\033[0;39m"
         else
-                echo -e "$line_package_name : \033[0;31mFailed\033[0;39m"
+                echo -e "$line_package_appname : \033[0;31mFailed\033[0;39m"
         fi
 done < $data_source
 
