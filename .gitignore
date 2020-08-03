@@ -1,8 +1,12 @@
+# ============================
 # All ignore
+# ============================
 /*
 /.**
 
-# Whitelist dotfiles 
+# ============================
+# Allow List (dotfiles)
+# ============================
 !/.config/
 !/.config/fish
 !/.config/fish/**
@@ -13,8 +17,11 @@
 !/.README.md
 !.gitignore
 
-# Whitelist
+# ============================
+# Allow List (Other Folder)
+# ============================
 !/bin/
 !/bin/**
 !/doc
 !/doc/**
+# ============================
