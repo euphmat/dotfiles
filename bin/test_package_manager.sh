@@ -6,7 +6,9 @@ if [[ `type brew > /dev/null 2>&1; echo $?` = 0 ]]; then
 else
         result=$((result + 1))
         echo -e " : \033[0;31mFailed\033[0;39m"
-        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        if [[ `type ruby > /dev/null 2>&1; echo $?` = 0 ]]; then
+                ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        fi
 fi
 
 echo -n "cask"
