@@ -1102,3 +1102,13 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
 
     __bobthefish_finish_segments
 end
+
+function got
+  git status
+  git add -A
+  git status
+  git commit -m "$argv"
+  git status
+  git push
+  git status
+end
