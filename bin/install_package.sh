@@ -87,7 +87,7 @@ if [[ `type pip3 > /dev/null 2>&1; echo $?` = 0 ]]; then
         done < $data_source
 else
         echo "installing python..."
-        brew install python
+        brew install python@3.8
 fi
 
 echo "=============================================================================="
