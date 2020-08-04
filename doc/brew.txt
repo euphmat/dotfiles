@@ -14,9 +14,11 @@ icu4c
 isl
 jpeg
 libevent
+libidn2
 libmpc
 libpng
 libssh2
+libunistring
 libzip
 mas
 mpfr
@@ -35,5 +37,6 @@ tldr
 unar
 utf8proc
 waifu2x
+wget
 xz
 youtube-dl
