@@ -18,7 +18,6 @@ gdbm
 gettext
 giflib
 git
-glab
 glib
 gmp
 gnutls
