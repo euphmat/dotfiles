@@ -2,7 +2,6 @@ alfred
 dropbox
 google-chrome
 google-japanese-ime
-iterm2
 karabiner-elements
 mapture
 pock
