@@ -15,3 +15,13 @@ alias la="exa -hla"
 
 # Git
 alias gitl="git log --oneline --graph --color --all --decorate"
+
+# git
+alias gs="git status"
+alias gb="git branch"
+alias ga="git add"
+alias gc="git commit -m"
+alias gp="git push"
+alias gm="git merge"
+alias gsw="git switch"
+alias gpu="git pull"
