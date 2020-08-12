@@ -10,8 +10,8 @@ alias reload="source ~/Github/dotfiles/.config/fish/config.fish"
 alias cdquiver="cd ~/Library/Containers/com.happenapps.Quiver/Data/Library/Application\ Support/Quiver"
 
 # ls 
-alias ll="exa -hl"
-alias la="exa -hla"
+alias ll="exa -hl --git"
+alias la="exa -hla --git"
 
 # Git
 alias gitl="git log --oneline --graph --color --all --decorate"
