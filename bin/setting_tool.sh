@@ -17,15 +17,15 @@ echo "=========================================================="
 if [[ -d ~/.ssh/ ]]; then
         echo "You are already set up. If not, please delete the .ssh folder."
 else
-        git config --global user.name $USERNAME
-        git config --global user.mail $USERNAME@gmail.com
+        git config --global user.name $USER
+        git config --global user.mail $USER@gmail.com
         chmod 700 ~/.ssh
         chmod 600 ~/.ssh/*
-        ssh-keygen -t ed25519 -N "" -f ~/.ssh/github -C $USERNAME@gmail.com
-        pdcopy < ~ /.ssh/gituhb.pub
+        ssh-keygen -t ed25519 -N "" -f ~/.ssh/github -C $USER@gmail.com
+        pbcopy < ~/.ssh/gituhb.pub
         echo -e "Host *" >> ~/.ssh/config
         echo -e "\tStrictHostKeyChecking no" >> ~/.ssh/config
-        echo -e "\tUserKnownHostFile=/dev/null" >> ~/.ssh/config
+        echo -e "\tUserKnownHostsFile /dev/null" >> ~/.ssh/config
         echo -e "\tServerAliveInterval 15" >> ~/.ssh/config
         echo -e "\tServerAliveCountMax 30" >> ~/.ssh/config
         echo -e "\tAddKeysToAgent yes" >> ~/.ssh/config
@@ -34,7 +34,7 @@ else
         echo -e "" >> ~/.ssh/config
         echo -e "Host github.com" >> ~/.ssh/config
         echo -e "\tHostName github.com" >> ~/.ssh/config
-        echo -e "\tIdentityFile /Users/$USERNAME/.ssh/github" >> ~/.ssh/config
+        echo -e "\tIdentityFile /Users/$USER/.ssh/github" >> ~/.ssh/config
         echo -e "\tUser git" >> ~/.ssh/config
         echo -e "\tLogLevel QUIET" >> ~/.ssh/config
         git config --global core.filemode false
