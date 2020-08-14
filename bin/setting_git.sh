@@ -10,7 +10,7 @@ function setup_git(){
         echo "You are already set up. If not, please delete the .ssh folder."
   else
         git config --global user.name euphmat
-        git config --global user.mail @gmail.com
+        git config --global user.mail euphmat@gmail.com
         chmod 700 ~/.ssh
         chmod 600 ~/.ssh/*
         ssh-keygen -t ed25519 -N "" -f ~/.ssh/github -C euphmat@gmail.com
