@@ -2,8 +2,11 @@ certifi
 chardet
 idna
 instaloader
+packaging
 pip
+pyparsing
 requests
 setuptools
+six
 urllib3
 wheel
