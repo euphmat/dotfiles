@@ -18,5 +18,7 @@ readline
 rust
 sqlite
 tig
+waifu2x
 xz
 yarn
+youtube-dl
