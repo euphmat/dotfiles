@@ -18,6 +18,7 @@ readline
 rust
 sqlite
 tig
+unar
 waifu2x
 xz
 yarn
