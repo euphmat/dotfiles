@@ -2,8 +2,6 @@ certifi
 chardet
 idna
 instaloader
-iso8601
-m3u8
 packaging
 pip
 pyparsing
