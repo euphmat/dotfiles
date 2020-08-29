@@ -73,7 +73,6 @@ theora
 tig
 unar
 unbound
-waifu2x
 webp
 x264
 x265
