@@ -1,5 +1,5 @@
-#!/bin/bash
-set -Cu
+#!/usr/bin/env bash
+set -Ceuo pipefail
 
 function main(){
         setup_fish
