@@ -1,6 +1,7 @@
 aom
 bash
 bat
+bdw-gc
 cairo
 dav1d
 exa
@@ -21,6 +22,7 @@ gmp
 gnutls
 gobject-introspection
 graphite2
+guile
 harfbuzz
 icu4c
 jpeg
@@ -39,6 +41,7 @@ libsoxr
 libssh2
 libtasn1
 libtiff
+libtool
 libunistring
 libvidstab
 libvorbis
