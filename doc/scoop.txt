@@ -1,0 +1,11 @@
+7zip
+bat
+cmder-full
+dark
+git
+lessmsi
+mdbook
+nodejs
+python
+rust
+yarn
