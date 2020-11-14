@@ -72,7 +72,7 @@ function update_doc(){
 }
 
 function check_os(){
-        if [[ "$OSTYPE" == "darwin" ]]; then
+        if [[ `uname` == "darwin" ]]; then
                 os="MacOS"
         elif [[ "$OSTYPE" == "msys" ]]; then
                 os="Windows"

@@ -32,7 +32,7 @@ function install(){
 }
 
 function check_os(){
-        if [[ "$OSTYPE" == "darwin" ]]; then
+        if [[ `uname` == "Darwin" ]]; then
                 os="MacOS"
         elif [[ "$OSTYPE" == "msys" ]]; then
                 os="Windows"

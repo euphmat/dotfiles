@@ -5,7 +5,6 @@ google-japanese-ime
 karabiner-elements
 keysmith
 mapture
-pock
 rectangle
 spotify
 visual-studio-code

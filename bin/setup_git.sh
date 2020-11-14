@@ -2,23 +2,7 @@
 set -Ceuo pipefail
 
 function main(){
-        check_os
-        install_git
         config_git
-}
-
-function install_git(){
-        if type git > /dev/null 2>&1; then
-                echo "Git is Installed."
-        else
-                if [[ $os == "MacOS" ]]; then
-                        brew install git
-                elif [[ $os == "Windows" ]]; then
-                        scoop install git
-                else
-                        echo "Unknown OS"
-                fi
-        fi
 }
 
 function config_git(){
@@ -28,14 +12,9 @@ function config_git(){
         git config --global user.name euphmat
         git config --global user.mail euphmat@gmail.com
         mkdir ~/.ssh
-        if [[ $os == "MacOS" ]]; then
-                chmod 700 ~/.ssh
-                chmod 600 ~/.ssh/*
-        fi
+        chmod 700 ~/.ssh
         ssh-keygen -t ed25519 -N "" -f ~/.ssh/github -C euphmat@gmail.com
-        if [[ $os == "MacOS" ]]; then
-                pbcopy < ~/.ssh/gituhb.pub
-        fi
+        chmod 600 ~/.ssh/*
         echo -e "Host *" >> ~/.ssh/config
         echo -e "\tStrictHostKeyChecking no" >> ~/.ssh/config
         echo -e "\tUserKnownHostsFile /dev/null" >> ~/.ssh/config
@@ -60,22 +39,8 @@ function config_git(){
         git config --global color.branch auto
         echo "gitの初期設定が完了しました。Githubへ鍵を登録してください。"
         echo "登録完了後、ssh -T github.com を入力し、疎通確認を実施してください。"
-        if [[ $os == "MacOS" ]]; then
-                open https://github.com/settings/keys
-        elif [[ $os == "Windows" ]]; then
-                start https://github.com/settings/keys
-        fi
+        open https://github.com/settings/keys
   fi
-}
-
-function check_os(){
-        if [[ "$OSTYPE" == "darwin" ]]; then
-                os="MacOS"
-        elif [[ "$OSTYPE" == "msys" ]]; then
-                os="Windows"
-        else
-                os="Unknown"
-        fi
 }
 
 main

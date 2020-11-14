@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -Ceuo pipefail
 
 command echo -e "🏃 Started Deploy..."
 link_to_homedir()
