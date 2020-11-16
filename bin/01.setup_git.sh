@@ -2,7 +2,16 @@
 set -Ceuo pipefail
 
 function main(){
+        install_git
         config_git
+}
+
+function install_git(){
+        if type git > /dev/null 2>&1; then
+                echo "git is Installed."
+        else
+                git
+        fi
 }
 
 function config_git(){

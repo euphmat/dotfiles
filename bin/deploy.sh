@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-command echo -e "🏃 Started Deploy..."
+command echo -e "Start"
 link_to_homedir()
 {
 	local script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
@@ -11,10 +11,10 @@ link_to_homedir()
 			[[ `basename $f` == ".gitignore" ]] && continue
 			if [[ -L "$HOME/`basename $f`" ]];then
 				command rm -f "$HOME/`basename $f`"
-				command echo "🔥 Delete: "$HOME/`basename $f`""
+				command echo "Delete: "$HOME/`basename $f`""
 			fi       
 			command ln -snf $f $HOME
-			command echo "✏️  Create: $f $HOME"
+			command echo "Create: $f $HOME"
 		done
 	else
 		command echo "same install src dest"
@@ -22,4 +22,4 @@ link_to_homedir()
 }
 
 link_to_homedir
-command echo -e "✅ Deploy is Completed!"
+command echo -e "Deploy is Completed!"

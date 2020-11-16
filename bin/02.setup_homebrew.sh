@@ -2,7 +2,7 @@
 set -Ceuo pipefail
 
 function main(){
-	install_homebrew
+        install_homebrew
 }
 
 function install_homebrew(){
