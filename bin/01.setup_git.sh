@@ -10,7 +10,7 @@ function install_git(){
         if type git > /dev/null 2>&1; then
                 echo "git is Installed."
         else
-                git
+                brew install git
         fi
 }
 

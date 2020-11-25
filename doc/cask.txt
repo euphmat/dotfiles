@@ -3,7 +3,6 @@ dropbox
 google-chrome
 google-japanese-ime
 karabiner-elements
-keysmith
 mapture
 rectangle
 spotify
