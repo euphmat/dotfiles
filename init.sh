@@ -8,7 +8,7 @@ function main(){
         ./bin/03.install_package.sh
         ./bin/04.setup_fish.sh
 
-        rm -rf ~.config/
+        rm -rf ~.config/ #初回実行時エラー回避
         ./bin/deploy.sh
 }
 
