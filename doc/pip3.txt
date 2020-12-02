@@ -1,3 +1,9 @@
-pip
-setuptools
+certifi
+chardet
+idna
 instaloader
+pip
+requests
+setuptools
+urllib3
+wheel
