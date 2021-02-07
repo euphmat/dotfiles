@@ -8,3 +8,9 @@
 📄 .vimrc
 📄 README.md
 ```
+
+## Usage
+
++ clone
++ pull
++ status
