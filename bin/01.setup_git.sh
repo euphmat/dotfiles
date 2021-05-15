@@ -46,6 +46,7 @@ function config_git(){
         git config --global color.diff auto
         git config --global color.status auto
         git config --global color.branch auto
+        cat ~/.ssh/github.pub | pbcopy
         echo "gitの初期設定が完了しました。Githubへ鍵を登録してください。"
         echo "登録完了後、ssh -T github.com を入力し、疎通確認を実施してください。"
         open https://github.com/settings/keys
