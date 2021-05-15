@@ -10,7 +10,6 @@ function main(){
 
                 # Update Document List
                 update_doc brew
-                update_doc cask
                 update_doc mas
                 update_doc pip3
                 update_doc yarn
@@ -28,7 +27,6 @@ function update_package(){
 function update_doc(){
         case $1 in
                 brew ) brew list >| ../doc/brew.txt ;;
-                cask ) brew cask list >| ../doc/cask.txt ;;
                 mas ) mas list | awk '{print $1}' >| ../doc/mas.txt ;;
                 pip3 ) pip3 list | sed -e '1,2d' | awk '{print $1}' >| ../doc/pip3.txt ;;
                 yarn ) yarn global list | grep @ | sed -e "s/info \"//" | sed -e "s/@.*//" >| ../doc/yarn.txt ;;

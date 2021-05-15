@@ -1,7 +1,8 @@
-set fenc=utf-8
-set nobackup
-set noswapfile
-set autoread
+set fenc=utf-8                       " 文字コード指定
+set nobackup                         " バックアップファイル出力無効
+set noswapfile                       " swpファイル出力無効
+set noundofile                       " undoファイル出力無効
+set autoread                         " 外部で変更があったときに読み直す
 set showcmd
 set encoding=utf8
 set termencoding=utf8
