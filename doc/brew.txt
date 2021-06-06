@@ -10,7 +10,6 @@ git
 icu4c
 jemalloc
 libev
-libssh2
 libuv
 mas
 mpdecimal
@@ -18,14 +17,10 @@ ncurses
 nghttp2
 node
 openssl@1.1
-pandoc
 pcre2
-pkg-config
 python@3.9
 readline
-rust
 sqlite
-tcl-tk
 tig
 unar
 xz
@@ -37,9 +32,6 @@ google-chrome
 google-japanese-ime
 karabiner-elements
 mapture
-notion
-raindropio
+obsidian
 rectangle
 spotify
-steam
-visual-studio-code
