@@ -1,6 +1,7 @@
 # fish config
 set -g theme_display_date no
 set theme_color_scheme dracula
+set PATH /opt/homebrew/bin/:$PATH
 
 # fish 
 alias fishrc="vim ~/Github/dotfiles/.config/fish/config.fish"
