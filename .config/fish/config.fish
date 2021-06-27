@@ -10,24 +10,27 @@ alias reload="source ~/Github/dotfiles/.config/fish/config.fish"
 
 # cd
 alias cdd="cd ~/Desktop"
+alias cds="cd /Volumes/SSD"
 
 # ls 
 alias ll="exa -hl --git"
 alias la="exa -hla --git"
 
 # Git
-alias gitl="git log --oneline --graph --color --all --decorate"
 alias gs="git status"
 alias gb="git branch"
 alias ga="git add -A"
-alias gc="git commit -m"
+alias gc="git commit -m $argv"
 alias gp="git push"
 alias gm="git merge"
 alias gh="git checkout"
 alias gr="git reset"
 alias gw="git switch"
-alias gl="git pull"
 alias gdt="git difftool"
+alias gds="git diff --stat"
+alias gl="git log --oneline --graph --color --all --decorate"
+alias glns="git log --name-status --graph"
+alias glo="git log --oneline --graph"
 
 function got
   git status
