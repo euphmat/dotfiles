@@ -30,7 +30,6 @@ alfred
 dropbox
 google-chrome
 google-japanese-ime
-karabiner-elements
 mapture
 obsidian
 rectangle
