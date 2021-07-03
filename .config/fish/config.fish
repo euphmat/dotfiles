@@ -1,7 +1,8 @@
 # fish config
 set -g theme_display_date no
 set theme_color_scheme dracula
-set PATH /opt/homebrew/bin/:$PATH
+set -x PATH /usr/local/bin $PATH
+set PATH /opt/homebrew/bin $PATH
 
 # fish 
 alias fishrc="vim ~/Github/dotfiles/.config/fish/config.fish"
@@ -11,6 +12,7 @@ alias reload="source ~/Github/dotfiles/.config/fish/config.fish"
 # cd
 alias cdd="cd ~/Desktop"
 alias cds="cd /Volumes/SSD"
+alias dotfiles="cd /Users/euphmat/Github/dotfiles"
 
 # ls 
 alias ll="exa -hl --git"
