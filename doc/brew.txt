@@ -1,4 +1,5 @@
 bat
+berkeley-db
 brotli
 c-ares
 exa
@@ -11,6 +12,9 @@ icu4c
 jemalloc
 libev
 libuv
+libyaml
+lua
+mac-cleanup
 mas
 mpdecimal
 ncurses
@@ -18,11 +22,14 @@ nghttp2
 node
 openssl@1.1
 pcre2
+perl
 python@3.9
 readline
+ruby
 sqlite
 tig
 unar
+vim
 xz
 yarn
 youtube-dl
@@ -30,6 +37,7 @@ alfred
 dropbox
 google-chrome
 google-japanese-ime
+karabiner-elements
 mapture
 obsidian
 rectangle
