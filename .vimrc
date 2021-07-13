@@ -41,21 +41,12 @@ highlight statusLine cterm=bold ctermfg=gray ctermbg=white
 highlight statusLineNC cterm=bold ctermfg=darkgray ctermbg=darkgray
 set showcmd                      " 右下に入力中コマンドを表示する
 
-
-
-
 " ===================================================================
 " キーコンフィグ
 " ===================================================================
 
 " ハイライト削除
 noremap <ESC><ESC> :nohlsearch<CR><ESC>
-
-" ウィンドウ移動
-nnoremap wj <C-w> j
-nnoremap wk <C-w> k
-nnoremap wl <C-w> l
-nnoremap wn <C-w> n
 
 " エスケープ
 imap jj <Esc>
