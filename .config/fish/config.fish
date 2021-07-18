@@ -34,6 +34,9 @@ alias gl="git log --oneline --graph --color --all --decorate"
 alias glns="git log --name-status --graph"
 alias glo="git log --oneline --graph"
 
+# finder
+alias f="open $argv"
+
 function got
   git status
   git add -A
