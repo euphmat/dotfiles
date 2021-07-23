@@ -19,7 +19,7 @@ alias ll="exa -hl --git"
 alias la="exa -hla --git"
 
 # Git
-alias gss="git status"
+alias gs="git status"
 alias gb="git branch"
 alias ga="git add -A"
 alias gct="git commit -m $argv"
