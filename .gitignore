@@ -22,6 +22,8 @@
 # ============================
 !/bin/
 !/bin/**
+!/preferences/
+!/preferences/**
 !/doc
 !/doc/**
 !/font
