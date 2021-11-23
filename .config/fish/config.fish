@@ -13,6 +13,7 @@ alias reload="source ~/Github/dotfiles/.config/fish/config.fish"
 alias cdd="cd ~/Desktop"
 alias cds="cd /Volumes/SSD"
 alias dotfiles="cd /Users/euphmat/Github/dotfiles"
+alias obsidian="cd /Users/euphmat/Dropbox/obsidian"
 
 # ls 
 alias ll="exa -hl --git"

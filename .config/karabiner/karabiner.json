@@ -263,11 +263,11 @@
                 },
                 {
                     "from": {
-                        "key_code": "right_command"
+                        "key_code": "right_control"
                     },
                     "to": [
                         {
-                            "key_code": "escape"
+                            "key_code": "left_command"
                         }
                     ]
                 }
